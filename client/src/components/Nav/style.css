@@ -1,0 +1,11 @@
+.navbar {
+    border-radius: 0;
+    background-color: navy;
+    color: white;
+    height: 40px;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
