@@ -4,6 +4,7 @@ import "./style.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import AddForm from "../../components/AddForm";
 import ToDoList from "../../components/ToDoList";
+import DoneList from "../../components/DoneList"; 
 
 class PersonalProjects extends Component {
     state = {
@@ -11,8 +12,9 @@ class PersonalProjects extends Component {
         width: window.innerWidth
     };
 
-    // Funtion to handleFormSubmit
+    // Funtion to display input info on to do div
     handleFormSubmit = () => {
+        console.log("IT WORKS!!!!");
         // take each input in the form and display it in the current-todos div as a row
 
         // add a "done" button to the row and make it move to the done div when clicked
@@ -40,9 +42,7 @@ class PersonalProjects extends Component {
                         <ToDoList />
                     </Col >
                     <Col>
-                        <Card id="done-list" className="text-center">
-                            <h1>DONE</h1>
-                        </Card>
+                        <DoneList />
                     </Col>
                 </Row>
             </Container>
