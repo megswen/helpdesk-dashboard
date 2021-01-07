@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "react-bootstrap";
 import "./style.css";
 
-class SearchDatabase extends Component {
+class GroupProjects extends Component {
   state = {
     open: false,
     width: window.innerWidth
@@ -11,11 +11,11 @@ class SearchDatabase extends Component {
   render() {
     return (
         <>
-        THIS IS THE SEARCH DATABASE PAGE
-        {/* A bunch of input forms to search by */}
+        {/* Maybe a component with pie charts */}
+        THIS IS THE HOME PAGE
         </>
     );
   }
 }
 
-export default SearchDatabase;
+export default GroupProjects;
