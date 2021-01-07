@@ -15,7 +15,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg mb-2">
+      <nav className="navbar navbar-expand-lg mb-5">
         <Link className="navbar-brand" to="/">
           WPR Helpdesk
         </Link>
