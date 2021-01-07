@@ -1,3 +1,13 @@
+#add-todo {
+    padding: 15px;
+}
+
+.pp-add-todo-button {
+    width: 80px;
+    background-color: rgb(30, 99, 82);
+    border: none;
+}
+
 #todo-list {
     font-size: 30px;
     padding-bottom: 50px;

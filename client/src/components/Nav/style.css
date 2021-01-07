@@ -11,7 +11,7 @@
     font-size: 30px;
 }
 
-.navbar-nav li {
-    float: right;
+.navbar-nav {
+    float: right !important;
     margin: 15px;
 }

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "react-bootstrap";
 import "./style.css";
-import { Container, Row, Col, Card, InputGroup } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import AddForm from "../../components/AddForm";
 
 class PersonalProjects extends Component {
   state = {
@@ -14,16 +15,16 @@ class PersonalProjects extends Component {
         <Container>
             <Row>
                 <Col>
-                    <Card id="add-todo" className="text-center">
-                        <h1>ADD</h1>
-                        <InputGroup>
-                            Input forms to add a task
-                        </InputGroup>
-                    </Card>
+                    <AddForm 
+                        placeholder1="Title"
+                        placeholder2="Priority"
+                        placeholder3="Notes"
+                    />
                 </Col>
                 <Col lg={6}>
                     <Card id="todo-list" className="text-center">
                         <h1>TO DO</h1>
+                        <div id="current-todos"></div>
                     </Card>
                 </Col >
                 <Col>
