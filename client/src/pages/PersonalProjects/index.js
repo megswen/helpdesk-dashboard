@@ -14,20 +14,22 @@ class PersonalProjects extends Component {
         <Container>
             <Row>
                 <Col>
-                    <Card id="add-todo" className="">
-                        <h1>Add a To Do</h1>
+                    <Card id="add-todo" className="text-center">
+                        <h1>ADD</h1>
                         <InputGroup>
                             Input forms to add a task
                         </InputGroup>
                     </Card>
                 </Col>
-                <Col xs={6}>
-                    <Card id="todo-list">
+                <Col lg={6}>
+                    <Card id="todo-list" className="text-center">
                         <h1>TO DO</h1>
                     </Card>
                 </Col >
                 <Col>
-                    
+                    <Card id="done-list" className="text-center">
+                        <h1>DONE</h1>
+                    </Card>
                 </Col>
             </Row>
         </Container>
