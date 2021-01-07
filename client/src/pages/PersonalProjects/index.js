@@ -10,15 +10,15 @@ class PersonalProjects extends Component {
     width: window.innerWidth
   };
 
+  // Funtion to handleFormSubmit
+
   render() {
     return (
         <Container>
             <Row>
                 <Col>
                     <AddForm 
-                        placeholder1="Title"
-                        placeholder2="Priority"
-                        placeholder3="Notes"
+                        // handleFormSubmit ???
                     />
                 </Col>
                 <Col lg={6}>
