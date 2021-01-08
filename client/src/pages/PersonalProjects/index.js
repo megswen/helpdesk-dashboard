@@ -1,23 +1,53 @@
 import React, { Component } from "react";
 import "react-bootstrap";
 import "./style.css";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import AddForm from "../../components/AddForm";
 import ToDoList from "../../components/ToDoList";
 import DoneList from "../../components/DoneList"; 
 
 class PersonalProjects extends Component {
     state = {
-        open: false,
-        width: window.innerWidth
+        todos: []
     };
 
+    componentDidMount = () => {
+        // load all the current to dos
+        
+    }
+
     // Funtion to display input info on to do div
-    handleFormSubmit = () => {
-        console.log("IT WORKS!!!!");
+    handleFormSubmit = event => {
+        //console.log("IT WORKS!!!!");
+        event.preventDefault();
         // take each input in the form and display it in the current-todos div as a row
+        let title = document.getElementById("title-input").value;
+        let priority = document.getElementById("priority-input").value;
+        let notes = document.getElementById("notes-input").value;
+        // document.getElementById("current-todos").innerHTML = title;
+        // document.getElementById("current-todos").innerHTML = priority;
+        // document.getElementById("current-todos").innerHTML = notes;
+
+        const elements = [title, priority, notes];
+
+        let fragment = document.createDocumentFragment();
+
+        for (let i = 0; i < elements.length; i++) { 
+            let e = document.createElement("div"); 
+            // e.setAttribute("className", "");
+            // e.setAttribute("id", "");
+            e.innerHTML = elements[i]; 
+            fragment.appendChild(e); 
+        } 
+
+        let newElement = document.getElementById("current-todos"); 
+        newElement.appendChild(fragment); 
+
+        console.log(title, priority, notes);
 
         // add a "done" button to the row and make it move to the done div when clicked
+
+        // add to dos to a database
 
         // alert?
     }
@@ -27,6 +57,11 @@ class PersonalProjects extends Component {
         // when done button is clicked, display to do title in done div
 
         // alert?
+    }
+
+    // Function to delete to dos off of Done List
+    deleteDone = () => {
+
     }
 
     render() {

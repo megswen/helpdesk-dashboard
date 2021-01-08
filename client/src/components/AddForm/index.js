@@ -16,22 +16,19 @@ function AddForm({ handleFormSubmit, props }) {
             <InputGroup className="p-2">
                 <FormControl
                     placeholder="Title"
-                    aria-label="title"
-                    aria-describedby=""
+                    id="title-input"
                 />
             </InputGroup>
             <InputGroup className="p-2">
                 <FormControl
                     placeholder="Priority"
-                    aria-label="priority"
-                    aria-describedby=""
+                    id="priority-input"
                 />
             </InputGroup>
             <InputGroup className="p-2">
                 <FormControl
                     placeholder="Notes"
-                    aria-label="notes"
-                    aria-describedby=""
+                    id="notes-input"
                 />
             </InputGroup>
             <Button
