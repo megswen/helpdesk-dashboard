@@ -36,16 +36,21 @@ class PersonalProjects extends Component {
             fragment.appendChild(e); 
         } 
 
+        // add a "done" button to the row and make it move to the done div when clicked
+        let btn = document.createElement("button");
+        btn.setAttribute("id", "done-button");
+        // btn.setAttribute("value", "done");
+        fragment.appendChild(btn);
+
         let newElement = document.getElementById("current-todos"); 
         newElement.appendChild(fragment); 
 
         console.log(title, priority, notes);
 
-        // add a "done" button to the row and make it move to the done div when clicked
-
         // add to dos to a database
 
         // alert?
+        alert("You've added " + title + " to your To Do List!");
     }
 
     // Function to move a to do to done div when done button is clicked

@@ -21,3 +21,8 @@
 #new-todo {
     margin: 10px;
 }
+
+#done-button {
+    width: 20px;
+    height: 20px;
+}
