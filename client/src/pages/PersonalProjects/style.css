@@ -15,4 +15,9 @@
 
 #current-todos {
     display: flex;
+    text-align: center;
+}
+
+#new-todo {
+    margin: 10px;
 }

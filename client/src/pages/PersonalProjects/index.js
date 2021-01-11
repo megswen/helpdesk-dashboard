@@ -30,8 +30,8 @@ class PersonalProjects extends Component {
 
         for (let i = 0; i < elements.length; i++) { 
             let e = document.createElement("div"); 
-            e.setAttribute("className", "new-todo");
-            // e.setAttribute("id", "");
+            // e.setAttribute("style", "margin: '10px'");
+            e.setAttribute("id", "new-todo");
             e.innerHTML = elements[i]; 
             fragment.appendChild(e); 
         } 
