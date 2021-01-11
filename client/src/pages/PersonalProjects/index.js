@@ -18,19 +18,15 @@ class PersonalProjects extends Component {
 
     // Funtion to display input info on to do div
     handleFormSubmit = event => {
-        //console.log("IT WORKS!!!!");
         event.preventDefault();
+
         // take each input in the form and display it in the current-todos div as a row
         let title = document.getElementById("title-input").value;
         let priority = document.getElementById("priority-input").value;
         let notes = document.getElementById("notes-input").value;
-        // document.getElementById("current-todos").innerHTML = title;
-        // document.getElementById("current-todos").innerHTML = priority;
-        // document.getElementById("current-todos").innerHTML = notes;
 
         const elements = [title, priority, notes];
-
-        let fragment = document.createDocumentFragment();
+        const fragment = document.createDocumentFragment();
 
         for (let i = 0; i < elements.length; i++) { 
             let e = document.createElement("div"); 

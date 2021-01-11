@@ -17,18 +17,24 @@ function AddForm({ handleFormSubmit, props }) {
                 <FormControl
                     placeholder="Title"
                     id="title-input"
+                    value={props}
+                    onChange={props}
                 />
             </InputGroup>
             <InputGroup className="p-2">
                 <FormControl
                     placeholder="Priority"
                     id="priority-input"
+                    value={props}
+                    onChange={props}
                 />
             </InputGroup>
             <InputGroup className="p-2">
                 <FormControl
                     placeholder="Notes"
                     id="notes-input"
+                    value={props}
+                    onChange={props}
                 />
             </InputGroup>
             <Button
